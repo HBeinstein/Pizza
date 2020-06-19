@@ -43,4 +43,13 @@ h1 {
   max-width: 60%;
   align-self: center;
   justify-self: center;
+  animation: rotation 10s infinite linear;
 }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
