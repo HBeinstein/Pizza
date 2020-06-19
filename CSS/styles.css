@@ -65,8 +65,9 @@ select {
   grid-template-columns: 2fr 6fr 2fr;
 }
 
-.header-container h1 {
+.header-container a {
   grid-column: 2 / span 1;
+  text-decoration: none;
 }
 
 .form-container {
