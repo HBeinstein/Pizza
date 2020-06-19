@@ -47,4 +47,8 @@ $(document).ready(function() {
       $("#pizza-price").append(`<p>Your total pizza price will be: $${newUserPizza.totalPrice}!</p>`)
       $(".form-container-displayed-price").show();
     });
+
+    $( "#get-more-pizza" ).click(function() {
+      location.reload();
+    });
 });
