@@ -39,14 +39,13 @@ $(document).ready(function() {
       newUserPizza.calcSizePrice();
       newUserPizza.calcSaucePrice();
       newUserPizza.calcToppingPrice();
-      console.log(newUserPizza);
 
       $(".form-container-original").hide();
       $("#pizza-price").append(`<p>Your total pizza price will be: $${newUserPizza.totalPrice}!</p>`)
       $(".form-container-displayed-price").show();
     });
 
-    $( "#get-more-pizza" ).click(function() {
+    $("#get-more-pizza").click(function() {
       location.reload();
     });
 });

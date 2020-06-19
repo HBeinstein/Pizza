@@ -6,7 +6,7 @@ h1 {
   font-family: poplar-std, sans-serif;
   font-size: 5rem;
   letter-spacing: .05rem;
-  color: white;
+  color: #ffed48;
   margin: 0;
   padding: 0;
   text-justify: center;
@@ -40,9 +40,15 @@ button {
 }
 
 select {
-  font-family: acumin-pro, sans-serif;
   color: #FF1600;
-    border: 1px solid #FF1600;
+  border: 1px solid #FF1600;
+  font-family: gotham, sans-serif;
+}
+
+.select-css {
+  color: #FF1600;
+  border: 1px solid #FF1600;
+  font-family: gotham, sans-serif;
 }
 
 .overall-container {

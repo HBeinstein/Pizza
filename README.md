@@ -13,7 +13,6 @@ _This project is a webpage where a user can customize and order their own pizza.
 * Clone the project from its GitHub repository (https://github.com/HBeinstein/Pizza.git).
 * Open in your code editor of choice.
 * Drag index.html file into your browser or double click it to view site.
-<!-- * View this site live on ghpages at: https://hbeinstein.github.io/beepBoopBeMyNeighbor/. -->
 
 
 ## Specifications
@@ -21,7 +20,6 @@ _The chart below shows all possible input behaviors and their expected outputs._
 
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
-| User does not select pizza size | none | "Please select a pizza size!"  | 
 | User selects no toppings and a small pizza | toppings: none, size: small | "Your total is $10" | 
 | User selects no toppings and a medium pizza | toppings: none, size: medium | "Your total is $12"  | 
 | User selects no toppings and a large pizza | toppings: none, size: large | "Your total is $14"  | 
