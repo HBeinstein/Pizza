@@ -103,3 +103,7 @@ radio {
 .form-container-displayed-price {
   display: none;
 }
+
+.form-container-displayed-price, .form-container-original {
+  margin-left: 7rem;
+}
