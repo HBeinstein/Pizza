@@ -16,36 +16,42 @@
     </div>
     
     <div class="form-container">
-      <h2>WHAT'S FOR DINNER?</h2>
-      <form>
-        <p>What size pizza would you like? (sm/$10, md/$12, lg/$14)</p>
-        <select id="pizza-size" name="pizza-size">
-          <option value="small">small</option>
-          <option value="medium">medium</option>
-          <option value="large">large</option>
-        </select>
-        <p>What sauce? (add $2 for alfredo or pesto)</p>
-        <select id="pizza-sauce" name="pizza-sauce">
-          <option value="tomato">tomato</option>
-          <option value="none">none</option>
-          <option value="alfredo">alfredo</option>
-          <option value="pesto">pesto</option>
-        </select>
-        <p>What toppings should we add? (add 50&#162; for each)</p>
-        <p>peppers:</p>
-        <input type="radio" name="topping" value="peppers">
-        <p>basil</p>
-        <input type="radio" name="topping" value="basil">
-        <p>tomato</p>
-        <input type="radio" name="topping" value="tomato">
-        <p>eggplant</p>
-        <input type="radio" name="topping" value="eggplant">
-        <p>garlic</p>
-        <input type="radio" name="topping" value="garlic">
-        <p>onion</p>
-        <input type="radio" name="topping" value="onion">
-        <button>Let's make a pizza!</button>
-      </form>
+      <div class="form-container-original">
+        <h2>WHAT'S FOR DINNER?</h2>
+        <form id="pizza-selection-form">
+          <p>What size pizza would you like? (sm/$10, md/$12, lg/$14)</p>
+          <select id="pizza-size" name="pizza-size">
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+          </select>
+          <p>What sauce? (add $2 for alfredo or pesto)</p>
+          <select id="pizza-sauce" name="pizza-sauce">
+            <option value="tomato">tomato</option>
+            <option value="none">none</option>
+            <option value="alfredo">alfredo</option>
+            <option value="pesto">pesto</option>
+          </select>
+          <p>What toppings should we add? (add $1 for each)</p>
+          <p>peppers:</p>
+          <input type="checkbox" name="topping" value="peppers">
+          <p>basil</p>
+          <input type="checkbox" name="topping" value="basil">
+          <p>tomato</p>
+          <input type="checkbox" name="topping" value="tomato">
+          <p>eggplant</p>
+          <input type="checkbox" name="topping" value="eggplant">
+          <p>garlic</p>
+          <input type="checkbox" name="topping" value="garlic">
+          <p>onion</p>
+          <input type="checkbox" name="topping" value="onion"><br>
+          <button>Let's make a pizza!</button>
+        </form>
+      </div>
+
+      <div class="form-container-displayed-price">
+        <div id="pizza-price"></div>
+      </div>
     </div>
 
     <div class="image-container">

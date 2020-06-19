@@ -1,7 +1,7 @@
-function Pizza(size, sauce, toppings) {
+function Pizza(size, sauce) {
   this.size = size
   this.sauce = sauce
-  this.toppings = toppings
+  this.toppings = []
   this.totalPrice = 0;
 }
 
@@ -24,18 +24,27 @@ Pizza.prototype.calcSaucePrice = function() {
 }
 
 Pizza.prototype.calcToppingPrice = function() {
-  this.totalPrice += this.toppings.length * .5;
+  this.totalPrice += this.toppings.length * 1;
 }
 
 
 
 $(document).ready(function() {
+    $("#pizza-selection-form").submit(function() {
+      event.preventDefault()
+      newUserPizza = new Pizza($("#pizza-size").val(), $("#pizza-sauce").val())
+      
+      $("input:checkbox[name=topping]:checked").each(function(){
+        newUserPizza.toppings.push($(this).val());
+      });
 
-  joesPizza = new Pizza("medium", "pesto", ["mushrooms", "basil", "tomato", "garlic"])
-  
-  joesPizza.calcSizePrice();
-  joesPizza.calcSaucePrice();
-  joesPizza.calcToppingPrice();
-  console.log(joesPizza);
-  
+      newUserPizza.calcSizePrice();
+      newUserPizza.calcSaucePrice();
+      newUserPizza.calcToppingPrice();
+      console.log(newUserPizza);
+
+      $(".form-container-original").hide();
+      $("#pizza-price").append(`<p>Your total pizza price will be: $${newUserPizza.totalPrice}!</p>`)
+      $(".form-container-displayed-price").show();
+    });
 });
