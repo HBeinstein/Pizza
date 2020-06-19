@@ -87,7 +87,7 @@ button {
   justify-self: center;
   align-self: center;
   margin-bottom: 8rem;
-  animation: rotation 10s infinite linear;
+  animation: rotation 5s infinite linear;
 }
 
   @keyframes rotation {
@@ -98,6 +98,12 @@ button {
       transform: rotate(359deg);
     }
   } 
+
+#large-size-pizza:hover, #medium-size-pizza:hover, #small-size-pizza:hover {
+  background-color: #FF1600;
+  border-radius: 50%;
+  
+}
 
 #large-size-pizza {
   grid-column: 1 / span 1;
