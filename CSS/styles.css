@@ -7,9 +7,47 @@ h1 {
   font-size: 5rem;
   letter-spacing: .05rem;
   color: white;
-  margin: 1rem;
+  margin: 0;
+  padding: 0;
+  text-justify: center;
 }
 
+h2 {
+  font-family: acumin-pro, sans-serif;
+  color: #FF1600;
+}
+
+h3 {
+  margin: 0;
+  font-family: poplar-std, sans-serif;
+  font-size: 5rem;
+  letter-spacing: .05rem;
+  color: white;
+  align-self: center;
+  font-size: 2rem;
+  background-color: blue;
+}
+
+p {
+  margin: .5rem;
+  font-family: acumin-pro, sans-serif;
+  color: #FF1600;
+}
+
+button {
+  font-family: acumin-pro, sans-serif;
+  color: #FF1600;
+}
+
+select {
+  font-family: acumin-pro, sans-serif;
+  color: #FF1600;
+    border: 1px solid #FF1600;
+}
+
+radio {
+  border: 1px solid #FF1600;
+}
 
 .overall-container {
   display: grid;
@@ -19,18 +57,26 @@ h1 {
 }
 
 .header-container {
+  margin: 0;
+  padding: 5rem;
   grid-column: 1 / span 2;
   grid-row: 1 / span 1;
   justify-self: stretch;
   align-self: stretch;
   text-align: center;
   background-color: #FF1600;
-  
+  display: grid;
+  grid-template-columns: 2fr 6fr 2fr;
+}
+
+.header-container h1 {
+  grid-column: 2 / span 1;
 }
 
 .form-container {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
+  justify-self: stretch;
 }
 
 .image-container {
