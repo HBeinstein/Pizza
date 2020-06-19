@@ -18,16 +18,14 @@ Pizza.prototype.calcSizePrice = function() {
 }
 
 Pizza.prototype.calcSaucePrice = function() {
-  if(this.sauce === "pesto") {
+  if(this.sauce === "pesto"|| this.sauce === "alfredo") {
     this.totalPrice += 2;
   }
 }
 
 Pizza.prototype.calcToppingPrice = function() {
-  this.totalPrice += this.toppings.length * 1;
+  this.totalPrice += this.toppings.length;
 }
-
-
 
 $(document).ready(function() {
     $("#pizza-selection-form").submit(function() {

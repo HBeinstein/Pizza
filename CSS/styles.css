@@ -29,12 +29,12 @@ h3 {
 
 p, span{
   margin: .5rem 0;
-  font-family: acumin-pro, sans-serif;
+  font-family: gotham, sans-serif;
   color: #FF1600;
 }
 
 button {
-  font-family: acumin-pro, sans-serif;
+  font-family: gotham, sans-serif;
   color: #FF1600;
   margin: .5rem 0;
 }
@@ -83,7 +83,7 @@ select {
 }
 
 #pizzaIllustration {
-  max-width: 60%;
+  max-width: 80%;
   align-self: center;
   justify-self: center;
   animation: rotation 10s infinite linear;
@@ -102,5 +102,5 @@ select {
 }
 
 .form-container-displayed-price, .form-container-original {
-  margin: 7rem 7rem;
+  margin: 7rem 10rem;
 }  
