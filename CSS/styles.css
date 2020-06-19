@@ -6,7 +6,7 @@ h1 {
   font-family: poplar-std, sans-serif;
   font-size: 5rem;
   letter-spacing: .05rem;
-  color: #FF1600;
+  color: white;
   margin: 1rem;
 }
 
@@ -21,8 +21,11 @@ h1 {
 .header-container {
   grid-column: 1 / span 2;
   grid-row: 1 / span 1;
-  justify-self: center;
-  align-self: center;
+  justify-self: stretch;
+  align-self: stretch;
+  text-align: center;
+  background-color: #FF1600;
+  
 }
 
 .form-container {
@@ -33,5 +36,11 @@ h1 {
 .image-container {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
-  background: red;
+  display: grid;
+}
+
+#pizzaIllustration {
+  max-width: 60%;
+  align-self: center;
+  justify-self: center;
 }
