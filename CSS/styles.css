@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: poplar-std, sans-serif;
+  font-size: 5rem;
+  letter-spacing: .05rem;
+  color: #FF1600;
+  margin: 1rem;
+}
+
+
+.overall-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 6fr;
+  height: 100vh;
+}
+
+.header-container {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.form-container {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.image-container {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  background: red;
+}
