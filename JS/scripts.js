@@ -5,15 +5,18 @@ function Pizza(size, sauce, toppings) {
   this.totalPrice = 0;
 }
 
-// Pizza.prototype.addToppingsPrice = function() {
-//   this.toppings
+Pizza.prototype.calcTotalPrice = function() {
+  if(this.size === "small") {
+    this.totalPrice += 10;
+  } else if(this.size === "medium") {
+    this.totalPrice += 12; 
+  } else if (this.size === "large") {
+    this.totalPrice += 14;
+  } else {
+    console.log("error");
+  }
 
-// }
-
-// Pizza.prototype.calcTotalPrice = function() {
-//   if(this.totalPrice)
-
-// }
+}
 
 
 $(document).ready(function() {
